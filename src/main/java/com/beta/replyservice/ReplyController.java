@@ -41,9 +41,6 @@ public class ReplyController {
 
 			int secoudRule = rules%10;
 
-			System.out.println(firstRule);
-			System.out.println(secoudRule);
-
 			if( firstRule == 1 ){
 				message = reverseString(inputs[1]);
 			}
