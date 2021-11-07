@@ -63,7 +63,7 @@ public class ReplyController {
 		return ResponseEntity.status(HttpStatus.OK).body(new ReplyMessage(message));
 	}
 
-	private String reverseString( final String message ){
+	public String reverseString( final String message ){
 
 		StringBuilder stringBuilder = new StringBuilder(message);
 
@@ -73,7 +73,7 @@ public class ReplyController {
 
 	}
 
-	private String convertToMD5( final String message ) throws NoSuchAlgorithmException, UnsupportedEncodingException{
+	public String convertToMD5( final String message ) throws NoSuchAlgorithmException, UnsupportedEncodingException{
 
 		MessageDigest messageDigest = MessageDigest.getInstance("MD5"); 
 		
